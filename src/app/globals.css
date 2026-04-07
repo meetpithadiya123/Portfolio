@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange: #f97316;
+  --orange-light: #fb923c;
+  --orange-dark: #ea580c;
+  --gradient: linear-gradient(135deg, #f97316, #fb923c, #fbbf24);
+  --gradient-text: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fbbf24 100%);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --shadow-orange: 0 4px 30px rgba(249, 115, 22, 0.2);
+}
+
+.dark {
+  --glass-bg: rgba(15, 15, 15, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  .dark body {
+    @apply bg-[#080808] text-gray-100;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background: rgba(249, 115, 22, 0.25);
+    color: #f97316;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 10px;
+  }
+}
+
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-white overflow-hidden transition-all duration-300;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    box-shadow: 0 4px 20px rgba(249, 115, 22, 0.35);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 6px 35px rgba(249, 115, 22, 0.55);
+    transform: translateY(-2px);
+  }
+
+  .btn-primary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .btn-primary:hover::before {
+    opacity: 1;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold border-2 border-orange-500 text-orange-500 transition-all duration-300;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-orange-500 text-white;
+    box-shadow: 0 4px 20px rgba(249, 115, 22, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .section-tag {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium mb-4;
+    background: rgba(249, 115, 22, 0.1);
+    color: #f97316;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  }
+
+  .dark .card-hover:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  .skill-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium;
+    background: rgba(249, 115, 22, 0.08);
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.15);
+  }
+
+  .dark .skill-badge {
+    background: rgba(249, 115, 22, 0.12);
+    color: #fb923c;
+  }
+
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+
+  .noise-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .blob-orange {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(249,115,22,0.15) 0%, transparent 70%);
+    filter: blur(40px);
+    pointer-events: none;
+    animation: blob 7s infinite;
+  }
+
+  .blob-amber {
+    animation: blob 7s infinite 2s;
+    background: radial-gradient(circle, rgba(251,191,36,0.12) 0%, transparent 70%);
+    filter: blur(40px);
+  }
+
+  .timeline-line {
+    @apply absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-orange-500 via-orange-300 to-transparent;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 placeholder-gray-400 transition-all duration-200 outline-none;
+  }
+
+  .input-field:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+  }
+
+  .dark .input-field {
+    @apply bg-gray-800/50 border-gray-700 text-gray-100 placeholder-gray-500;
+  }
+
+  .dark .input-field:focus {
+    border-color: #f97316;
+  }
+}
