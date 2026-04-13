@@ -55,6 +55,18 @@ const projects: Project[] = [
     score: 94,
     stats: "REAL-TIME UPDATES, LIVE ON RENDER",
   },
+{
+  id: "project-4",
+  title: "Book Management",
+  description:
+    "A full-stack book management application built with React and Express.js, featuring CRUD operations with a RESTful API backend.",
+  tags: ["React", "Express", "Node.js", "JavaScript"],
+  github: "https://github.com/meetpithadiya123/Practical_13_AWT",
+  demo: "https://book-manage-todo.vercel.app/",
+  stars: 0,
+  score: 97,
+  stats: "FULL-STACK, LIVE ON VERCEL",
+},
 ];
 
 // No helper needed anymore
