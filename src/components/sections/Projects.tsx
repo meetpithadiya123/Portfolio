@@ -67,6 +67,18 @@ const projects: Project[] = [
   score: 97,
   stats: "FULL-STACK, LIVE ON VERCEL",
 },
+{
+  id: "project-5",
+  title: "Shop Invoice Generator",
+  description:
+    "A full-stack invoice management application built with React and Express.js, featuring CRUD operations to create, view, and manage shop invoices with a RESTful API backend.",
+  tags: ["React", "Express", "Node.js", "MongoDB", "JavaScript"],
+  github: "https://github.com/meetpithadiya123/shop-bill-manage_AWT14",
+  demo: "https://shop-bill-manage.vercel.app/",
+  stars: 0,
+  score: 99,
+  stats: "FULL-STACK, LIVE ON VERCEL",
+},
 ];
 
 // No helper needed anymore
