@@ -79,6 +79,18 @@ const projects: Project[] = [
   score: 99,
   stats: "FULL-STACK, LIVE ON VERCEL",
 },
+{
+  id: "project-6",
+  title: "Complaint Management System",
+  description:
+    "A multi-user institutional complaint management platform built with the MERN stack. It features role-based access for Admins, HODs, and Students to streamline complaint filing, priority-based tracking, and resolution management.",
+  tags: ["React", "Express", "Node.js", "MongoDB", "JavaScript"],
+  github: "https://github.com/meetpithadiya123/AWT-Final-Project",
+  demo: "https://meetawtproject.vercel.app/",
+  stars: 0,
+  score: 100,
+  stats: "MERN STACK, ROLE-BASED AUTH",
+}
 ];
 
 // No helper needed anymore
