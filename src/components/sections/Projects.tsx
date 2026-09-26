@@ -102,7 +102,7 @@ const projects: Project[] = [
   stars: 0,
   score: 100,
   stats: "ASP.NET MVC, E-COMMERCE, LIVE",
-},
+}
 ];
 
 // No helper needed anymore
