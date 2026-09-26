@@ -90,7 +90,19 @@ const projects: Project[] = [
   stars: 0,
   score: 100,
   stats: "MERN STACK, ROLE-BASED AUTH",
-}
+},
+{
+  id: "project-7",
+  title: "E-Commerce Website .NET",
+  description:
+    "A full-stack e-commerce website built with .NET 10 MVC featuring Admin and User panels, secure authentication, product and order management, online payments, email purchase notifications, database integration, and live deployment.",
+  tags: [".NET 10", "ASP.NET MVC", "C#", "Entity Framework", "SQL Server", "Live E-mail Forwarding"],
+  github: "https://github.com/meetpithadiya123/.NET_Project",
+  demo: "https://urbancart-cs69.onrender.com/",
+  stars: 0,
+  score: 100,
+  stats: "ASP.NET MVC, E-COMMERCE, LIVE",
+},
 ];
 
 // No helper needed anymore
