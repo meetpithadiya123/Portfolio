@@ -71,6 +71,7 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+      <meta name="google-site-verification" content="qqkgkx_WGAsXsD_dc871qDnwSjLRl-K_4YJerGAC1mg" />
       </head>
       <body className={`${inter.variable} antialiased`}>
         <ThemeProvider>{children}</ThemeProvider>
