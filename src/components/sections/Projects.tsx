@@ -122,7 +122,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ delay: index * 0.1, duration: 0.6, ease: "easeOut" }}
       id={project.id}
-      className="group relative glass bg-white/80 dark:bg-[#151515]/80 backdrop-blur-xl border border-gray-200 dark:border-white/10 rounded-3xl p-6 shadow-xl dark:shadow-2xl overflow-hidden transition-all duration-500 hover:border-orange-500/40 hover:shadow-[0_10px_40px_rgba(249,115,22,0.15)] flex flex-col sm:flex-row items-center gap-6"
+      className="group relative glass bg-white/80 dark:bg-[#151515]/80 border border-gray-200 dark:border-white/10 rounded-3xl p-6 shadow-xl dark:shadow-2xl overflow-hidden transition-all duration-500 hover:border-orange-500/40 hover:shadow-[0_10px_40px_rgba(249,115,22,0.15)] flex flex-col sm:flex-row items-center gap-6"
     >
       {/* Radiant Glow Behind Card on Hover */}
       <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/0 to-orange-500/0 group-hover:from-orange-500/5 group-hover:to-transparent transition-colors duration-500 pointer-events-none" />
@@ -222,7 +222,7 @@ export default function Projects() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
         <FadeIn className="text-center mb-20">
-          <span className="inline-block px-4 py-1 rounded-full border border-gray-200 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-md text-xs font-bold text-gray-600 dark:text-gray-300 tracking-widest uppercase mb-6 shadow-sm">
+          <span className="inline-block px-4 py-1 rounded-full border border-gray-200 dark:border-white/10 bg-white/50 dark:bg-white/5 text-xs font-bold text-gray-600 dark:text-gray-300 tracking-widest uppercase mb-6 shadow-sm">
             <span className="text-orange-500 mr-2">✦</span> Projects
           </span>
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white tracking-widest uppercase mb-4 drop-shadow-[0_0_15px_rgba(249,115,22,0.05)]">

@@ -111,16 +111,16 @@ export default function Hero() {
 
               {/* Overlay Content */}
               <div className="absolute bottom-6 left-6 right-6">
-                <div className="glass backdrop-blur-md bg-white/10 dark:bg-black/20 border border-white/20 p-5 rounded-2xl flex items-center justify-between">
+                <div className="glass bg-white/10 dark:bg-black/20 border border-white/20 p-5 rounded-2xl flex items-center justify-between">
                   <div>
                     <p className="text-white font-extrabold text-xl tracking-tight">Meet Pithadiya</p>
                     <p className="text-white/80 text-sm font-medium mt-0.5">Gujarat, India 🇮🇳</p>
                   </div>
                   <div className="flex gap-2">
-                    <a href="https://github.com/meetpithadiya123" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-orange-500 hover:scale-110 transition-all">
+                    <a href="https://github.com/meetpithadiya123" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-white hover:bg-orange-500 hover:scale-110 transition-all">
                       <GithubIcon size={18} />
                     </a>
-                    <a href="https://www.linkedin.com/in/meet-pithadiya?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-orange-500 hover:scale-110 transition-all">
+                    <a href="https://www.linkedin.com/in/meet-pithadiya?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-white hover:bg-orange-500 hover:scale-110 transition-all">
                       <LinkedinIcon size={18} />
                     </a>
                   </div>

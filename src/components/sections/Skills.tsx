@@ -143,7 +143,7 @@ export default function Skills() {
 
               {/* Main Card */}
               <div 
-                className="relative glass bg-white/80 dark:bg-[#151515]/80 backdrop-blur-xl border border-gray-200 dark:border-white/10 rounded-2xl p-6 shadow-xl dark:shadow-2xl overflow-hidden transition-all duration-500 group-hover:border-orange-500/30 group-hover:bg-white dark:group-hover:bg-[#151515]/95 group-hover:shadow-[0_20px_50px_rgba(249,115,22,0.15)]"
+                className="relative glass bg-white/80 dark:bg-[#151515]/80 border border-gray-200 dark:border-white/10 rounded-2xl p-6 shadow-xl dark:shadow-2xl overflow-hidden transition-all duration-500 group-hover:border-orange-500/30 group-hover:bg-white dark:group-hover:bg-[#151515]/95 group-hover:shadow-[0_20px_50px_rgba(249,115,22,0.15)]"
                 style={{ transform: "translateZ(0)" }}
               >
                 {/* Category Header */}
@@ -193,7 +193,7 @@ export default function Skills() {
               <motion.div
                 key={tech}
                 whileHover={{ scale: 1.05, y: -2 }}
-                className="px-5 py-2 rounded-full glass bg-white/60 dark:bg-[#151515]/60 backdrop-blur-md border border-gray-200 dark:border-white/10 text-gray-700 dark:text-gray-300 text-sm font-medium hover:border-orange-500/50 hover:text-orange-600 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-orange-500/10 transition-all cursor-default shadow-sm dark:shadow-lg"
+                className="px-5 py-2 rounded-full glass bg-white/60 dark:bg-[#151515]/60 border border-gray-200 dark:border-white/10 text-gray-700 dark:text-gray-300 text-sm font-medium hover:border-orange-500/50 hover:text-orange-600 dark:hover:text-white hover:bg-orange-50 dark:hover:bg-orange-500/10 transition-all cursor-default shadow-sm dark:shadow-lg"
               >
                 {tech}
               </motion.div>
